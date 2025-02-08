@@ -1,0 +1,192 @@
+### Python ###
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.Python
+venv/
+.venv/
+env/
+ENV/
+local_settings.py   # Local settings overrides (sensitive)
+db.sqlite3          # SQLite database (if accidentally used)
+db.sqlite3-*
+
+### Django ###
+*.log
+*.pot
+*.mo
+__init__.pyc
+__init__.pyo
+__manifest__.pyc
+__openerp__.pyc
+*.orig
+*.rej
+.DS_Store          # macOS system files in Django projects
+
+### Django Media and Static (if served locally) ###
+media/*
+static/*
+!media/.gitkeep   # Keep .gitkeep if using empty media/static dirs
+!static/.gitkeep
+
+### Byte-compiled / Optimized / DLL files ###
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.dylib
+*.dll
+*.egg
+*.eggs
+.pytest_cache/
+.coverage
+*.env
+*.manifest
+
+### OS and Editor related ###
+*.[oa]
+*~
+*.swp
+*.swo
+*.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+.idea/              # IntelliJ IDEA
+*.iml
+*.ipr
+*.iws
+.vscode/             # VS Code
+.history
+*.sublime-project
+*.sublime-workspace
+.tern-project
+.project
+.settings
+.cache
+*.esproj
+*.jsproj
+*.lsr
+nbproject/           # NetBeans
+tmp/
+temp/
+*.tmproj
+*.jps
+.idea/
+.idea_modules/
+
+### Docker Related ###
+docker-volume/      # Ignore local Docker volumes if created in project
+docker-compose*.override.yml # Optional docker-compose override files
+
+### Distribution / Packaging ###
+dist/
+build/
+wheels/
+*.egg-info/
+*.whl
+MANIFEST
+
+### Node.js and npm (if frontend assets are in project - might not be needed for API-only) ###
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+### Logs and temporary files ###
+*.log
+*.tmp
+*.out
+*.pid
+*.seed
+*.sql
+*.cache
+*.ipynb_checkpoints # Jupyter Notebook checkpoints if used for exploration
+
+### Virtual Environment ###
+.venv/
+venv/
+env/
+ENV/
+pyvenv.cfg
+
+### Security & Secrets ###
+.env*              # Very important: .env files for secrets!
+*.key
+*.pem
+*.crt
+*.pfx
+
+### Test results, coverage ###
+coverage/
+*.xml
+*.json
+.tox/
+htmlcov/
+.nyc_output/
+.pytest_cache/
+.scrapy
+
+### Swap files ###
+*.swp
+*.swo
+*~
+
+### Backup files ###
+*.bak
+*.backup
+
+### Temp files ###
+*.tmp
+*.temp
+
+### Runtime data ###
+*.pid
+*.seed
+*.log
+*.run
+
+### OS generated files ###
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+### Vim swap files ###
+*~
+*.swp
+*.swo
+*.netrwhist
+
+### Emacs files ###
+*~
+\#*#
+
+### TextMate files ###
+*.tmproj
+
+### Ccache files ###
+.ccache/
+
+### Intellij IDEA ###
+*.iml
+*.ipr
+*.iws
+out/
+
+### macOS ###
+.AppleDouble
+.LSOverride
+
+### Windows ###
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Project Specific Ignores #
