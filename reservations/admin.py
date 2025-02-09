@@ -1,3 +1,13 @@
 from django.contrib import admin
 
-# Register your models here.
+from . import models
+
+
+@admin.register(models.Restaurant)
+class RestaurantAdmin(admin.ModelAdmin):
+    model = models.Restaurant
+
+
+@admin.register(models.User)
+class RestaurantAdmin(admin.ModelAdmin):
+    model = models.User

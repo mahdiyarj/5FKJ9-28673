@@ -15,14 +15,14 @@ class Table(models.Model):
     capacity = models.PositiveSmallIntegerField()
 
     def __str__(self):
-        return f"Table {self.table_id} with capacity {self.capacity}"
+        return f"{self.table_id}"
 
 
 class Reservation(models.Model):
     table = models.OneToOneField(
         Table, on_delete=models.CASCADE, related_name="booking"
     )
-    User = models.ForeignKey(
+    user = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
         related_name="bookings",
